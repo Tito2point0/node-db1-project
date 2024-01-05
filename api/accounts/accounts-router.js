@@ -12,8 +12,9 @@ router.get("/", async (req, res, next) => {
   // DO YOUR MAGIC
 });
 
-router.get("/:id", md.checkAccountId, async (req, res, next) => {
-res.json(req.account)
+router.get("/:id", md.checkAccountId,
+  async (req, res, next) => {
+  res.json(req.account);
 });
 
 router.post(
